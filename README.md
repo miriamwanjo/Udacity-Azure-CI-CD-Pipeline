@@ -7,7 +7,9 @@
 <TODO: Project Plan
 
 * A link to a Trello board for the project
+* https://trello.com/b/rBTAIP7Q/build-a-ci-cd-pipeline-project
 * A link to a spreadsheet that includes the original and final project plan>
+* 
 
 ## Instructions
 
