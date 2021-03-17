@@ -36,14 +36,15 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
      - requirements.txt
      - python script (hello.py)
      - test file (hello_test.py)
+     - 
   ### Local Continuous Integration setup
-    First we need to do a local test to ensure that everything works. 
-    Once the scaffolding files are created, run make all on the azure terminal, 
-      - this should trigger the install, lint and test steps outlined in the makefile. 
+    1. First we need to do a local test to ensure that everything works. Once the scaffolding files are created, run make all on the azure terminal.
+    2. This triggers the install, lint and test steps outlined in the makefile. 
       ![make_all-screenshot](https://user-images.githubusercontent.com/41089682/111541573-aae83980-873e-11eb-9d0b-50382827ea9e.PNG)
+      
   #### Continuous Integration - Github Actions
-     Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
-    - In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
+   Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
+   In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
       made to your repository depending on the seried of commnads you specify in the github actions config. 
     
     
