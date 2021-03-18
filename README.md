@@ -31,7 +31,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
    10. cd into your repo and you are ready for the next steps.
  
  ### Project Scaffolding - 
-   The application scaffolding contains:
+  The application scaffolding contains:
      - Makefile 
      - requirements.txt
      - python script (hello.py)
@@ -81,7 +81,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
    5. In your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
    6. Configure Python to Linux Web App on Azure and select wep app name. 
    7. This will create a YAML file. Select Save and Run and this will commit the YAML file to your github repo and run the build and deploy job.
-          ![azurepipeline screenshot](https://user-images.githubusercontent.com/41089682/111698636-0bda4500-8805-11eb-9438-75cf692f8d6d.P
+          ![azurepipeline screenshot](https://user-images.githubusercontent.com/41089682/111698636-0bda4500-8805-11eb-9438-75cf692f8d6d.PNG)
          
    8. Now that your continuous delivery is set up, you can push any changes to your github repo and this automatically triggers your pipeline to run and test - making sure that your project is always in a testable and deployable state which is the main point of continuous integration/ continuous delivery
 
