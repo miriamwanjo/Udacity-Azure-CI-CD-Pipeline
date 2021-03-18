@@ -3,7 +3,7 @@
 This project details steps for building a Github repository and creating an application scaffolding for a Machine Learning Flask Web App.  to perform both continuous intergration and continuous delivery. First by using Github Actions to perform an initial test and then integrating the application with Azure Pipelines to enable continuous delivery to Azure App Service. . 
 
 ## Project Plan
-The first step is to create a project plan detailing what the tasks are, goals, deadlines, level of difficuly for each task, ther person who is responsible foe each task etc. This is essential for tracking tasks and making sure that each outlined task is completed in a timely manner in order to ensure completion of all tasks by the target completion date. 
+The first step is to create a project plan detailing what the tasks are, goals, deadlines, level of difficulty for each task, the person who is responsible for each task etc. This is essential for tracking tasks and making sure that each outlined task is completed in a timely manner in order to ensure completion of all tasks by the target completion date. 
 
 * A link to a Trello board for this project
  https://trello.com/b/rBTAIP7Q/build-a-ci-cd-pipeline-project
@@ -23,12 +23,12 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
       ssh-keygen -t rsa
   5. Open the .pub file using the cat command and copy the key in the file for example: 
       cat </path>.ssh/id_rsa.pub
-  6. Go back to your github progile, uner settings select SSH and GPG keys - paste the SSH key.
+  6. Go back to your github profile, under settings select SSH and GPG keys - paste the SSH key.
   7. Now you can do a git clone of the repo - hover over to your repo and click the code icon, select SSH and copy the SSH clone. 
   8. Go back to the Azure terminal and clone your repo by running
         git clone<yoursshkey>
       - ![azure-cloud-shell-clone](https://user-images.githubusercontent.com/41089682/111539218-9c4c5300-873b-11eb-800a-ad9744bdf5f6.PNG)
-   10. cd into your repo and you are ready for the next steos.
+   10. cd into your repo and you are ready for the next steps.
  
  ### Project Scaffolding - 
    The application scaffolding contains:
@@ -46,7 +46,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
   #### Continuous Integration - Github Actions
   < Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
   < In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
-      made to your repository depending on the seried of commnads you specify in the github actions config. 
+      made to your repository depending on the series of commands you specify in the github actions config. 
     1. On the Github profile navigate to your repo and select Actions - choose 'set up yourself' option.
     2. This creates a yml code which you can edit yourself
     3. Push the changes to Github - navigate back to your repo , then select Actions again and the github workflow should now appear - click on it and select the yml file.
@@ -56,8 +56,8 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
    < You can create a status badge as well by selecting the create badge option, copy and paste the link to your readme. 
     [![Python application test with Github Actions](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml)
     
-  ### Coontinuous Delivery - Azure Pipelines & Azure App Service
-   1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       reource group. 
+  ### Continuous Delivery - Azure Pipelines & Azure App Service
+   1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       resource group. 
    2. On the Azure terminal, create an app service and deploy your app: 
         az webapp up --sku F1 -n <yourappservicename> 
         **the name has to be unique
@@ -89,7 +89,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+< The project expectations were clearly outlined and the way the project was broken down into different categories helped to create an understanding on how each step relates to another. The machine learning prediction app was interesting as well. 
 
 ## Demo 
 
