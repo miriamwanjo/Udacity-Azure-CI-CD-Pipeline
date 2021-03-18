@@ -74,6 +74,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
        ![make_prediction screenshot](https://user-images.githubusercontent.com/41089682/111698903-61165680-8805-11eb-8f4a-a0c14e7b709c.PNG)
        
    4. Inspect the logs of your application on your brwoser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
+   
        ![logs_docker](https://user-images.githubusercontent.com/41089682/111699415-147f4b00-8806-11eb-99fb-1c72a9f9b3ff.PNG)
 
    5. In your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
