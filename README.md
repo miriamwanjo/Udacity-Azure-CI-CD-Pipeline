@@ -32,14 +32,14 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
  
  ### Project Scaffolding - 
   The application scaffolding contains:
-     - Makefile 
-     - requirements.txt
-     - python script (hello.py)
-     - test file (hello_test.py)
-     - 
+  * Makefile 
+  * requirements.txt
+  * python script (hello.py)
+  * test file (hello_test.py)
+    
   ### Local Continuous Integration setup
    1. First we need to do a local test to ensure that everything works. Once the scaffolding files are created, run `make all` on the azure terminal.
-   2. This triggers the install, lint and test steps outlined in the makefile. 
+   2. This triggers the install, lint and test steps outlined in the makefile. (all the steps should pass)
    
       ![make_all-screenshot](https://user-images.githubusercontent.com/41089682/111541573-aae83980-873e-11eb-9d0b-50382827ea9e.PNG)
       
