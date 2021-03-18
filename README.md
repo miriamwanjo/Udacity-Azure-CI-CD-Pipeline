@@ -38,7 +38,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
      - test file (hello_test.py)
      - 
   ### Local Continuous Integration setup
-   1. First we need to do a local test to ensure that everything works. Once the scaffolding files are created, run make all on the azure terminal.
+   1. First we need to do a local test to ensure that everything works. Once the scaffolding files are created, run `make all` on the azure terminal.
    2. This triggers the install, lint and test steps outlined in the makefile. 
    
       ![make_all-screenshot](https://user-images.githubusercontent.com/41089682/111541573-aae83980-873e-11eb-9d0b-50382827ea9e.PNG)
