@@ -16,9 +16,9 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
   1. Create a Github Repo and initialize it with a READMe file adnd add a gitignore for python and ensure it is integrated with Azure Pipelines. 
   2. Go to the Azure portal and open a terminal. 
   3. Create and acticate a python virtual environment by running:
-      $ python3 -m venv~/.<yourreponame>
+      `python3 -m venv~/.<yourreponame>`
        then
-      $ source ~/.<yourreponame>/bin/activate
+      `source ~/.<yourreponame>/bin/activate`
   4. Create an ssh key to communicate with Github by running:
       ssh-keygen -t rsa
   5. Open the .pub file using the cat command and copy the key in the file for example: 
