@@ -44,8 +44,8 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
       ![make_all-screenshot](https://user-images.githubusercontent.com/41089682/111541573-aae83980-873e-11eb-9d0b-50382827ea9e.PNG)
       
   #### Continuous Integration - Github Actions
-  < Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
-  < In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
+  Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
+  In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
       made to your repository depending on the series of commands you specify in the github actions config. 
     1. On the Github profile navigate to your repo and select Actions - choose 'set up yourself' option.
     2. This creates a yml code which you can edit yourself
@@ -53,7 +53,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
     4. Then click on 'build' and this should run to verify the lint and test steps pass.
     ![github-actions-screenshot](https://user-images.githubusercontent.com/41089682/111696334-324ab100-8802-11eb-8a35-c862232efbea.PNG)
     
-   < You can create a status badge as well by selecting the create badge option, copy and paste the link to your readme. 
+   You can create a status badge as well by selecting the create badge option, copy and paste the link to your readme. 
     [![Python application test with Github Actions](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml)
     
   ### Continuous Delivery - Azure Pipelines & Azure App Service
@@ -74,7 +74,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
        This should output
        ![make_prediction screenshot](https://user-images.githubusercontent.com/41089682/111698903-61165680-8805-11eb-8f4a-a0c14e7b709c.PNG)
        
-   4. Inspect the logs of your application on your brwoser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
+   4. Inspect the logs of your application on your browser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
    
        ![logs_docker](https://user-images.githubusercontent.com/41089682/111699415-147f4b00-8806-11eb-99fb-1c72a9f9b3ff.PNG)
 
@@ -85,12 +85,12 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
          
    8. Now that your continuous delivery is set up, you can push any changes to your github repo and this automatically triggers your pipeline to run and test - making sure that your project is always in a testable and deployable state which is the main point of continuous integration/ continuous delivery
 
-   9. Once your are done, ensure to go back to your azure portal and delete all the resources you have created including the resource groups and the app services so that you do not incur additional costs. 
+   9. Once you are done, ensure to go back to your azure portal and delete all the resources you have created including the resource groups and the app services so that you do not incur additional costs. 
 
 
 ## Enhancements
 
-< The project expectations were clearly outlined and the way the project was broken down into different categories helped to create an understanding on how each step relates to another. The machine learning prediction app was interesting as well. 
+The project expectations were clearly outlined and the way the project was broken down into different categories helped to create an understanding on how each step relates to another. The machine learning prediction app was interesting as well. 
 
 ## Demo 
 
