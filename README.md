@@ -20,13 +20,13 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
        then
       `source ~/.<yourreponame>/bin/activate`
   4. Create an ssh key to communicate with Github by running:
-      ssh-keygen -t rsa
+      `ssh-keygen -t rsa`
   5. Open the .pub file using the cat command and copy the key in the file for example: 
-      cat </path>.ssh/id_rsa.pub
+      `cat </path>.ssh/id_rsa.pub`
   6. Go back to your github profile, under settings select SSH and GPG keys - paste the SSH key.
   7. Now you can do a git clone of the repo - hover over to your repo and click the code icon, select SSH and copy the SSH clone. 
   8. Go back to the Azure terminal and clone your repo by running
-        git clone<yoursshkey>
+        `git clone<yoursshkey>`
       - ![azure-cloud-shell-clone](https://user-images.githubusercontent.com/41089682/111539218-9c4c5300-873b-11eb-800a-ad9744bdf5f6.PNG)
    10. cd into your repo and you are ready for the next steps.
  
@@ -44,7 +44,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
       ![make_all-screenshot](https://user-images.githubusercontent.com/41089682/111541573-aae83980-873e-11eb-9d0b-50382827ea9e.PNG)
       
   #### Continuous Integration - Github Actions
-  Ensure that you track all the changes to your github repo by running git status, git add ., git commit -m "message" and git push.
+  Ensure that you track all the changes to your github repo by running `git status`, `git add .`, `git commit -m "message"` and `git push`.
   In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
       made to your repository depending on the series of commands you specify in the github actions config. 
     1. On the Github profile navigate to your repo and select Actions - choose 'set up yourself' option.
@@ -59,22 +59,22 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
   ### Continuous Delivery - Azure Pipelines & Azure App Service
    1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       resource group. 
    2. On the Azure terminal, create an app service and deploy your app:
-          az webapp up --sku F1 -n <yourappservicename>
+          `az webapp up --sku F1 -n <yourappservicename>`
  
         **the name has to be unique
-        To verify the depoyed application on your browser go to
-       https://<your-appservice>.azurewebsites.net/ and you should see the words in the html part on the app.py file
+        To verify the deployed application on your browser go to
+       `https://<your-appservice>.azurewebsites.net/` and you should see the words in the html part on the app.py file
        ![app url verification](https://user-images.githubusercontent.com/41089682/111698561-fa913880-8804-11eb-8041-24c3fdbc2c83.PNG)
       
    3. On the terminal, perform a prediction to ensure that everything is working by running 
-        ./make_predict_azure_app.sh
-       < If you get an error, run 
-       chmod +x make_predict_azure_app.sh first
+        `./make_predict_azure_app.sh`
+      If you get an error, run 
+       `chmod +x make_predict_azure_app.sh` first
        
        This should output
        ![make_prediction screenshot](https://user-images.githubusercontent.com/41089682/111698903-61165680-8805-11eb-8f4a-a0c14e7b709c.PNG)
        
-   4. Inspect the logs of your application on your browser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
+   4. Inspect the logs of your application on your browser: `https://<app-name>.scm.azurewebsites.net/api/logs/docker`
    
        ![logs_docker](https://user-images.githubusercontent.com/41089682/111699415-147f4b00-8806-11eb-99fb-1c72a9f9b3ff.PNG)
 
