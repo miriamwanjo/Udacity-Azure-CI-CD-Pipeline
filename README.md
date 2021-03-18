@@ -58,14 +58,15 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
     
   ### Continuous Delivery - Azure Pipelines & Azure App Service
    1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       resource group. 
-   2. On the Azure terminal, create an app service and deploy your app: 
-        az webapp up --sku F1 -n <yourappservicename> 
+   2. On the Azure terminal, create an app service and deploy your app:
+          az webapp up --sku F1 -n <yourappservicename>
+ 
         **the name has to be unique
         To verify the depoyed application on your browser go to
        https://<your-appservice>.azurewebsites.net/ and you should see the words in the html part on the app.py file
        ![app url verification](https://user-images.githubusercontent.com/41089682/111698561-fa913880-8804-11eb-8041-24c3fdbc2c83.PNG)
       
-   3. On the terminal, perfomr a prediction to ensure that everything is working by running 
+   3. On the terminal, perform a prediction to ensure that everything is working by running 
         ./make_predict_azure_app.sh
        < If you get an error, run 
        chmod +x make_predict_azure_app.sh first
