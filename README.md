@@ -64,18 +64,19 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
         To verify the depoyed application on your browser go to
        https://<your-appservice>.azurewebsites.net/ and you should see the words in the html part on the app.py file
        ![app url verification](https://user-images.githubusercontent.com/41089682/111698561-fa913880-8804-11eb-8041-24c3fdbc2c83.PNG)
-      NG)
       
    3. On the terminal, perfomr a prediction to ensure that everything is working by running 
-       ./make_predict_azure_app.sh
-       If you get an error, run 
+        ./make_predict_azure_app.sh
+       < If you get an error, run 
        chmod +x make_predict_azure_app.sh first
+       
        This should output
        ![make_prediction screenshot](https://user-images.githubusercontent.com/41089682/111698903-61165680-8805-11eb-8f4a-a0c14e7b709c.PNG)
-    4. Inspect the logs of your application on your brwoser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
+       
+   4. Inspect the logs of your application on your brwoser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
        ![logs_docker](https://user-images.githubusercontent.com/41089682/111699415-147f4b00-8806-11eb-99fb-1c72a9f9b3ff.PNG)
 
-   5. in your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
+   5. In your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
    6. Configure Python to Linux Web App on Azure and select wep app name. 
    7. This will create a YAML file. Select Save and Run and this will commit the YAML file to your github repo and run the build and deploy job.
           ![azurepipeline screenshot](https://user-images.githubusercontent.com/41089682/111698636-0bda4500-8805-11eb-9438-75cf692f8d6d.P
