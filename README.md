@@ -57,8 +57,8 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
     [![Python application test with Github Actions](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml)
     
   ### Coontinuous Delivery - Azure Pipelines & Azure App Service
-    1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       reource group. 
-    2. On the Azure terminal, create an app service and deploy your app: 
+   1. On the Azure portal, navigate to Azure Devops organizations, and create a new project, under service connection ensure that its connected to your subscription and       reource group. 
+   2. On the Azure terminal, create an app service and deploy your app: 
         az webapp up --sku F1 -n <yourappservicename> 
         **the name has to be unique
         To verify the depoyed application on your browser go to
@@ -66,7 +66,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
        ![app url verification](https://user-images.githubusercontent.com/41089682/111698561-fa913880-8804-11eb-8041-24c3fdbc2c83.PNG)
       NG)
       
-    3. On the terminal, perfomr a prediction to ensure that everything is working by running 
+   3. On the terminal, perfomr a prediction to ensure that everything is working by running 
        ./make_predict_azure_app.sh
        If you get an error, run 
        chmod +x make_predict_azure_app.sh first
@@ -75,14 +75,14 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
     4. Inspect the logs of your application on your brwoser: https://<app-name>.scm.azurewebsites.net/api/logs/docker
        ![logs_docker](https://user-images.githubusercontent.com/41089682/111699415-147f4b00-8806-11eb-99fb-1c72a9f9b3ff.PNG)
 
-    5. in your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
-    6. Configure Python to Linux Web App on Azure and select wep app name. 
-    7. This will create a YAML file. Select Save and Run and this will commit the YAML file to your github repo and run the build and deploy job.
+   5. in your project page, select Pipeline and create a new Pipeline and connect to your Github repository.
+   6. Configure Python to Linux Web App on Azure and select wep app name. 
+   7. This will create a YAML file. Select Save and Run and this will commit the YAML file to your github repo and run the build and deploy job.
           ![azurepipeline screenshot](https://user-images.githubusercontent.com/41089682/111698636-0bda4500-8805-11eb-9438-75cf692f8d6d.P
          
-    8. Now that your continuous delivery is set up, you can push any changes to your github repo and this automatically triggers your pipeline to run and test - making sure that your project is always in a testable and deployable state which is the main point of continuous integration/ continuous delivery
+   8. Now that your continuous delivery is set up, you can push any changes to your github repo and this automatically triggers your pipeline to run and test - making sure that your project is always in a testable and deployable state which is the main point of continuous integration/ continuous delivery
 
-     9. Once your are done, ensure to go back to your azure portal and delete all the resources you have created including the resource groups and the app services so that you do not incur additional costs. 
+   9. Once your are done, ensure to go back to your azure portal and delete all the resources you have created including the resource groups and the app services so that you do not incur additional costs. 
 
 
 ## Enhancements
