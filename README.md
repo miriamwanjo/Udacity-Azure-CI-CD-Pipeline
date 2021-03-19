@@ -94,6 +94,6 @@ The project expectations were clearly outlined and the way the project was broke
 
 ## Demo 
 
-<Screencast link: https://www.screencast.com/t/RdmldxC7>
+<Screencast link: https://www.screencast.com/t/RdmldxC7
 
 
