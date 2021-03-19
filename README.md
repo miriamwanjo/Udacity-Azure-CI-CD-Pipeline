@@ -1,6 +1,6 @@
 # Overview
 
-This project details steps for building a Github repository and creating an application scaffolding for a Machine Learning Flask Web App.  to perform both continuous intergration and continuous delivery. First by using Github Actions to perform an initial test and then integrating the application with Azure Pipelines to enable continuous delivery to Azure App Service. . 
+This project details steps for building a Github repository and creating an application scaffolding for a Machine Learning Flask Web App, to perform both continuous integration and continuous delivery. First by using Github Actions to perform an initial test and then integrating the application with Azure Pipelines to enable continuous delivery to Azure App Service. . 
 
 ## Project Plan
 The first step is to create a project plan detailing what the tasks are, goals, deadlines, level of difficulty for each task, the person who is responsible for each task etc. This is essential for tracking tasks and making sure that each outlined task is completed in a timely manner in order to ensure completion of all tasks by the target completion date. 
@@ -15,7 +15,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
 ### Setting up the Azure Cloud Shell
   1. Create a Github Repo and initialize it with a READMe file and add a gitignore for python and ensure it is integrated with Azure Pipelines. 
   2. Go to the Azure portal and open a terminal. 
-  3. Create and acticate a python virtual environment by running:
+  3. Create and activate a python virtual environment by running:
       `python3 -m venv~/.<yourreponame>`
        then
       `source ~/.<yourreponame>/bin/activate`
@@ -47,10 +47,10 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
   Ensure that you track all the changes to your github repo by running `git status`, `git add .`, `git commit -m "message"` and `git push`.
   In this step you will configure Github Actions to perform continuous integration remotely. this ensures that your code is continuously tested everytime new changes are 
       made to your repository depending on the series of commands you specify in the github actions config. 
-    1. On the Github profile navigate to your repo and select Actions - choose 'set up yourself' option.
-    2. This creates a yml code which you can edit yourself
-    3. Push the changes to Github - navigate back to your repo , then select Actions again and the github workflow should now appear - click on it and select the yml file.
-    4. Then click on 'build' and this should run to verify the lint and test steps pass.
+  1. On the Github profile navigate to your repo and select Actions - choose 'set up yourself' option.
+  2. This creates a yml code which you can edit yourself
+  3. Push the changes to Github - navigate back to your repo , then select Actions again and the github workflow should now appear - click on it and select the yml file.
+  4. Then click on 'build' and this should run to verify the lint and test steps pass.
     ![github-actions-screenshot](https://user-images.githubusercontent.com/41089682/111696334-324ab100-8802-11eb-8a35-c862232efbea.PNG)
     
    You can create a status badge as well by selecting the create badge option, copy and paste the link to your readme. 
