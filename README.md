@@ -53,6 +53,7 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
   4. Then click on 'build' and this should run to verify the lint and test steps pass.
     ![github-actions-screenshot](https://user-images.githubusercontent.com/41089682/111696334-324ab100-8802-11eb-8a35-c862232efbea.PNG)
     
+  ### Create Badge  
    You can create a status badge as well by selecting the create badge option, copy and paste the link to your readme. 
     [![Python application test with Github Actions](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/miriamwanjo/Udacity-Azure-CI-CD-Pipeline/actions/workflows/main.yml)
     
