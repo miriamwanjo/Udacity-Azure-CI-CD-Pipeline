@@ -74,6 +74,13 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
        
        This should output
        ![make_prediction screenshot](https://user-images.githubusercontent.com/41089682/111698903-61165680-8805-11eb-8f4a-a0c14e7b709c.PNG)
+      
+   ##### Perfomance Testing of my ML API 
+   In order to do test how many users my website can serve concurrently, I used Locust and tested 20 users at a hatch rate of 2 seconds. By the time I took the screenshot, 143 requests had been passed to my website and the API could effectively handle 4.6 requests per second (RPS). 
+   
+![Locust Screenshot](https://user-images.githubusercontent.com/41089682/112678807-67c25080-8e39-11eb-976f-1356ea33707c.PNG)
+
+![locustCharts](https://user-images.githubusercontent.com/41089682/112678793-62650600-8e39-11eb-95e1-2a14cfe4f321.PNG)
        
    4. Inspect the logs of your application on your browser: `https://<app-name>.scm.azurewebsites.net/api/logs/docker`
    
