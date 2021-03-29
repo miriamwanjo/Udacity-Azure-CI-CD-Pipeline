@@ -77,6 +77,11 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
       
    ##### Perfomance Testing of my ML API 
    In order to do test how many users my website can serve concurrently, I used Locust and tested 20 users at a hatch rate of 2 seconds. By the time I took the screenshot, 143 requests had been passed to my website and the API could effectively handle 4.6 requests per second (RPS). 
+   Steps:
+   1. In the command prompt (not in Azure cloud shell), install locust: `pip install locust`
+   2. Navigate to your repo where the locustfile is stored using `cd <pathtorepo>` 
+   3. run locust using your website url as a host. for example: `locust -f locustfile.py --host https://ml-flask-cicd.azurewebsites.net'
+   4. The go to http://localhost:8089/ and enter the number of users and hatch rate you prefer and then start click on "start swarming"
    
 ![Locust Screenshot](https://user-images.githubusercontent.com/41089682/112678807-67c25080-8e39-11eb-976f-1356ea33707c.PNG)
 
@@ -94,7 +99,10 @@ https://docs.google.com/spreadsheets/d/1qpCGKQe1nXdEB18FjAw5xvyuGp2dEQqrv6jw8nJY
    8. Now that your continuous delivery is set up, you can push any changes to your github repo and this automatically triggers your pipeline to run and test - making sure that your project is always in a testable and deployable state which is the main point of continuous integration/ continuous delivery
 
    9. Once you are done, ensure to go back to your azure portal and delete all the resources you have created including the resource groups and the app services so that you do not incur additional costs. 
+   
+#### Architecture Diagram
 
+   ![Azure CI_CD Architecture](https://user-images.githubusercontent.com/41089682/112881108-e5cc6480-9090-11eb-954c-5b1e452e1782.png)
 
 ## Enhancements
 
